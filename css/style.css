@@ -267,72 +267,6 @@ section {
   }
 }
 
-/* ================= MOBILE ================= */
-
-@media (max-width: 768px) {
-  .main-header {
-    position: sticky;
-  }
-
-  .header-container {
-    min-height: 70px;
-    padding: 0 18px;
-  }
-
-  .logo img {
-    width: 125px;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-  .main-nav {
-    display: none;
-
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-
-    padding: 20px 18px;
-
-    background: #f3f5f9;
-    border-top: 1px solid rgba(13, 27, 62, 0.08);
-    border-bottom: 1px solid rgba(13, 27, 62, 0.08);
-
-    flex-direction: column;
-    align-items: stretch;
-    gap: 18px;
-  }
-
-  .main-nav.active {
-    display: flex;
-  }
-
-  .nav-list {
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-  }
-
-  .nav-item {
-    width: 100%;
-  }
-
-  .nav-link {
-    width: 100%;
-    padding: 11px 0;
-    font-size: 14px;
-  }
-
-  .apply-btn {
-    width: 100%;
-    padding: 12px 18px;
-  }
-}
-
 /* ================= HERO SECTION ================= */
 
 .hero-section {
@@ -3867,44 +3801,59 @@ section {
   }
 }
 
+/* =========================================================
+   MOBILE NAVIGATION (dropdown menu)
+   Controlled by JS: mainNav.classList.toggle("menu-open")
+========================================================= */
+
 @media (max-width: 768px) {
-  /* Mobile Header */
+  /* ---- Sticky header on mobile ---- */
   .main-header {
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 9999;
   }
 
   .header-container {
     position: relative;
+    min-height: 70px;
+    padding: 0 18px;
   }
 
-  /* Menu Button */
+  .logo img {
+    width: 125px;
+  }
+
+  /* ---- Hamburger button ---- */
   .menu-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: 42px;
     height: 42px;
-    border: none;
+
+    border: 1px solid rgba(13, 27, 62, 0.2);
+    border-radius: 6px;
     background: transparent;
     color: #0d1b3e;
-    font-size: 20px;
+
+    font-size: 18px;
     cursor: pointer;
     z-index: 10001;
   }
 
-  /* Mobile Navbar */
-  .main-header .main-nav {
+  /* ---- Mobile dropdown nav ---- */
+  .main-nav {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
 
-    display: none;
     flex-direction: column;
     align-items: stretch;
 
-    /* Upar ka extra space remove */
     margin: 0;
     padding: 14px 12px 18px;
 
@@ -3918,43 +3867,45 @@ section {
     z-index: 10000;
   }
 
-  /* Menu Open */
-  .main-header .main-nav.menu-open {
-    display: flex !important;
+  .main-nav.menu-open {
+    display: flex;
   }
 
-  /* Nav List */
-  .main-nav .nav-list {
+  .nav-list {
     display: flex;
     flex-direction: column;
-
     width: 100%;
     margin: 0;
     padding: 0;
-
     gap: 2px;
     list-style: none;
   }
 
-  .main-nav .nav-item {
+  .nav-item {
     width: 100%;
     margin: 0;
     padding: 0;
+    border: none !important;
   }
 
-  /* Nav Links */
-  .main-nav .nav-link {
+  /* ---- Nav links (no underline on mobile) ---- */
+  .nav-link,
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link:active,
+  .nav-link.active {
     display: block;
     width: 100%;
-
     padding: 10px 12px;
 
     color: #0d1b3e;
     background: transparent;
 
     text-decoration: none !important;
-    border: none;
+    border: none !important;
     border-bottom: none !important;
+    box-shadow: none !important;
+    outline: none !important;
 
     font-size: 13px;
     font-weight: 500;
@@ -3962,19 +3913,19 @@ section {
     border-radius: 6px;
   }
 
-  /* Hover - NO underline */
-  .main-nav .nav-link:hover,
-  .main-nav .nav-link:focus,
-  .main-nav .nav-link:active {
-    color: #0d1b3e;
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link:active {
     background: #f3f5f9;
-
-    text-decoration: none !important;
-    border-bottom: none !important;
-    box-shadow: none;
   }
 
-  /* Apply Button */
+  .nav-link::before,
+  .nav-link::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  /* ---- Apply button inside menu ---- */
   .main-nav .apply-btn {
     display: flex;
     align-items: center;
@@ -3990,7 +3941,6 @@ section {
 
     text-decoration: none !important;
     border: none;
-
     border-radius: 7px;
 
     font-size: 12px;
@@ -4000,47 +3950,562 @@ section {
   .main-nav .apply-btn:hover {
     background: #0d1b3e;
     color: #ffffff;
-    text-decoration: none !important;
-    border: none;
     box-shadow: none;
   }
 }
+
+/* =========================================================
+   FINAL MOBILE RESPONSIVE FIX
+========================================================= */
+
 @media (max-width: 768px) {
-  /* Remove ALL underline from mobile navigation */
-  .main-header .main-nav .nav-link,
-  .main-header .main-nav .nav-link:hover,
-  .main-header .main-nav .nav-link:focus,
-  .main-header .main-nav .nav-link:active,
-  .main-header .main-nav .nav-link.active {
-    text-decoration: none !important;
+  /* ================= BODY ================= */
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* ================= HEADER ================= */
+
+  .main-header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+
+  .header-container {
+    width: 100%;
+    max-width: none;
+    min-height: 70px;
+    margin: 0;
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo img {
+    width: 125px;
+    max-width: 125px;
+    height: auto;
+  }
+
+  /* Hamburger */
+
+  .menu-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin: 0;
+    padding: 0;
+
+    background: transparent;
+    color: #0d1b3e;
+
+    border: 1px solid rgba(13, 27, 62, 0.2);
+    border-radius: 7px;
+
+    font-size: 19px;
+  }
+
+  /* ================= MOBILE NAV ================= */
+
+  .main-header .main-nav {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+
+    display: none !important;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    margin: 0;
+    padding: 12px 12px 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e6ed;
+    border-top: none;
+
+    border-radius: 0 0 10px 10px;
+
+    box-shadow: 0 12px 25px rgba(13, 27, 62, 0.1);
+
+    z-index: 10000;
+  }
+
+  .main-header .main-nav.menu-open {
+    display: flex !important;
+  }
+
+  .main-nav .nav-list {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+
+    gap: 2px;
+  }
+
+  .main-nav .nav-item {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
     border: none !important;
-    border-bottom: 0 !important;
+  }
+
+  /* ================= NAV LINKS ================= */
+
+  .main-nav .nav-link,
+  .main-nav .nav-link:hover,
+  .main-nav .nav-link:focus,
+  .main-nav .nav-link:active,
+  .main-nav .nav-link.active {
+    display: block;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 10px 12px;
+
+    background: transparent;
+    color: #0d1b3e;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    text-decoration: none !important;
+
+    border: none !important;
+    border-bottom: none !important;
+
     box-shadow: none !important;
     outline: none !important;
   }
 
-  /* Remove underline created by pseudo element */
-  .main-header .main-nav .nav-link::before,
-  .main-header .main-nav .nav-link::after,
-  .main-header .main-nav .nav-link:hover::before,
-  .main-header .main-nav .nav-link:hover::after,
-  .main-header .main-nav .nav-link.active::before,
-  .main-header .main-nav .nav-link.active::after {
+  /* Remove old underline completely */
+
+  .main-nav .nav-link::before,
+  .main-nav .nav-link::after,
+  .main-nav .nav-link:hover::before,
+  .main-nav .nav-link:hover::after,
+  .main-nav .nav-link.active::before,
+  .main-nav .nav-link.active::after {
     content: none !important;
     display: none !important;
     width: 0 !important;
     height: 0 !important;
-    border: none !important;
-    background: none !important;
-    box-shadow: none !important;
   }
 
-  /* Also remove border from nav item */
-  .main-header .main-nav .nav-item,
-  .main-header .main-nav .nav-item:hover,
-  .main-header .main-nav .nav-item.active {
-    border: none !important;
-    border-bottom: none !important;
-    box-shadow: none !important;
+  .main-nav .nav-link:hover {
+    background: #f3f5f9;
+  }
+
+  /* ================= APPLY BUTTON ================= */
+
+  .main-nav .apply-btn {
+    width: 100%;
+
+    margin: 10px 0 0;
+    padding: 11px 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0d1b3e;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 12px;
+  }
+
+  .main-nav .apply-btn:hover {
+    background: #0d1b3e;
+    color: #ffffff;
+    transform: none;
+  }
+
+  /* =====================================================
+       PARTNER FORM SECTION
+    ===================================================== */
+
+  .partner-form-section {
+    width: 100%;
+    margin: 0;
+    padding: 45px 0 50px;
+
+    overflow: hidden;
+  }
+
+  .partner-form-container {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+    padding: 0 14px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+
+    box-sizing: border-box;
+  }
+
+  /* ================= FORM INTRO ================= */
+
+  .partner-form-info {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .form-info-points {
+    margin-top: 25px;
+    gap: 16px;
+  }
+
+  .form-info-item {
+    gap: 11px;
+  }
+
+  .info-icon {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+  }
+
+  .form-info-item h4 {
+    font-size: 11px;
+  }
+
+  .form-info-item p {
+    font-size: 9px;
+  }
+
+  /* ================= FORM BOX ================= */
+
+  .partner-form-box {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    margin: 0;
+
+    padding: 24px 16px;
+
+    box-sizing: border-box;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+  }
+
+  .form-box-header {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .form-box-header h3 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .form-box-header p {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  /* ================= FORM ================= */
+
+  .partner-form {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .form-row {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .form-field,
+  .full-field {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    margin-bottom: 17px;
+  }
+
+  .form-field label {
+    font-size: 11px;
+    margin-bottom: 7px;
+  }
+
+  /* ================= INPUTS ================= */
+
+  .input-box {
+    width: 100%;
+    max-width: 100%;
+    height: 46px;
+
+    box-sizing: border-box;
+  }
+
+  .input-box input,
+  .input-box select {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    font-size: 11px;
+  }
+
+  /* ================= COUNTRY ================= */
+
+  .select-box {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* ================= PHONE ================= */
+
+  .phone-input {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    height: 46px;
+
+    box-sizing: border-box;
+  }
+
+  .country-code-wrapper {
+    width: 92px;
+    flex: 0 0 92px;
+  }
+
+  .country-code-wrapper select {
+    width: 100%;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 22px;
+  }
+
+  .phone-input > input {
+    min-width: 0;
+    width: 100%;
+
+    font-size: 11px;
+    padding: 0 12px;
+  }
+
+  .whatsapp-note {
+    width: 100%;
+
+    font-size: 9px;
+    line-height: 1.5;
+
+    flex-wrap: wrap;
+  }
+
+  /* ================= DIVIDER ================= */
+
+  .form-divider {
+    width: 100%;
+    margin: 5px 0 22px;
+  }
+
+  /* ================= PREFERENCE ================= */
+
+  .preference-section {
+    width: 100%;
+    margin-bottom: 22px;
+  }
+
+  .preference-heading h4 {
+    font-size: 13px;
+  }
+
+  .preference-heading p {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .preference-options {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+
+  .preference-card {
+    width: 100%;
+    min-width: 0;
+
+    min-height: 58px;
+
+    padding: 10px 12px;
+
+    box-sizing: border-box;
+  }
+
+  /* ================= ACCREDITATION ================= */
+
+  .accreditation-selection {
+    width: 100%;
+    max-width: 100%;
+
+    margin-top: 18px;
+  }
+
+  .accreditation-selection label {
+    font-size: 11px;
+  }
+
+  .accreditation-selection .input-box {
+    width: 100%;
+  }
+
+  .accreditation-selection select {
+    width: 100%;
+    font-size: 11px;
+  }
+
+  /* ================= FORM BOTTOM ================= */
+
+  .form-bottom {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+    justify-content: center;
+
+    gap: 12px;
+  }
+
+  .form-bottom p {
+    width: 100%;
+
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: 8.5px;
+    line-height: 1.5;
+  }
+
+  .form-submit {
+    width: 100%;
+    min-height: 44px;
+
+    padding: 0 15px;
+
+    font-size: 11px;
+
+    box-sizing: border-box;
+  }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+  .header-container {
+    min-height: 66px;
+    padding: 0 14px;
+  }
+
+  .logo img {
+    width: 115px;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .partner-form-section {
+    padding: 40px 0 45px;
+  }
+
+  .partner-form-container {
+    padding: 0 10px;
+    gap: 25px;
+  }
+
+  .partner-form-box {
+    padding: 22px 14px;
+    border-radius: 12px;
+  }
+
+  .form-box-header h3 {
+    font-size: 20px;
+  }
+
+  .form-field label {
+    font-size: 10.5px;
+  }
+
+  .input-box,
+  .phone-input {
+    height: 44px;
+  }
+
+  .input-box input,
+  .input-box select,
+  .phone-input > input {
+    font-size: 10.5px;
+  }
+
+  .country-code-wrapper {
+    width: 88px;
+    flex-basis: 88px;
+  }
+
+  .preference-card {
+    min-height: 55px;
   }
 }
