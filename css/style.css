@@ -267,6 +267,72 @@ section {
   }
 }
 
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .main-header {
+    position: sticky;
+  }
+
+  .header-container {
+    min-height: 70px;
+    padding: 0 18px;
+  }
+
+  .logo img {
+    width: 125px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .main-nav {
+    display: none;
+
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+
+    padding: 20px 18px;
+
+    background: #f3f5f9;
+    border-top: 1px solid rgba(13, 27, 62, 0.08);
+    border-bottom: 1px solid rgba(13, 27, 62, 0.08);
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .nav-list {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 11px 0;
+    font-size: 14px;
+  }
+
+  .apply-btn {
+    width: 100%;
+    padding: 12px 18px;
+  }
+}
+
 /* ================= HERO SECTION ================= */
 
 .hero-section {
@@ -3598,7 +3664,7 @@ section {
   background-color: #fff;
 }
 
-.footer-logo img{
+.footer-logo img {
   width: 140px;
 }
 
@@ -3801,60 +3867,44 @@ section {
   }
 }
 
-/* =========================================================
-   MOBILE NAVIGATION (dropdown menu)
-   Controlled by JS: mainNav.classList.toggle("menu-open")
-========================================================= */
-
 @media (max-width: 768px) {
-
-  /* ---- Sticky header on mobile ---- */
+  /* Mobile Header */
   .main-header {
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 9999;
   }
 
   .header-container {
     position: relative;
-    min-height: 70px;
-    padding: 0 18px;
   }
 
-  .logo img {
-    width: 125px;
-  }
-
-  /* ---- Hamburger button ---- */
+  /* Menu Button */
   .menu-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 42px;
     height: 42px;
-
-    border: 1px solid rgba(13, 27, 62, 0.2);
-    border-radius: 6px;
+    border: none;
     background: transparent;
     color: #0d1b3e;
-
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
     z-index: 10001;
   }
 
-  /* ---- Mobile dropdown nav ---- */
-  .main-nav {
-    display: none;
+  /* Mobile Navbar */
+  .main-header .main-nav {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
 
+    display: none;
     flex-direction: column;
     align-items: stretch;
 
+    /* Upar ka extra space remove */
     margin: 0;
     padding: 14px 12px 18px;
 
@@ -3868,45 +3918,43 @@ section {
     z-index: 10000;
   }
 
-  .main-nav.menu-open {
-    display: flex;
+  /* Menu Open */
+  .main-header .main-nav.menu-open {
+    display: flex !important;
   }
 
-  .nav-list {
+  /* Nav List */
+  .main-nav .nav-list {
     display: flex;
     flex-direction: column;
+
     width: 100%;
     margin: 0;
     padding: 0;
+
     gap: 2px;
     list-style: none;
   }
 
-  .nav-item {
+  .main-nav .nav-item {
     width: 100%;
     margin: 0;
     padding: 0;
-    border: none !important;
   }
 
-  /* ---- Nav links (no underline on mobile) ---- */
-  .nav-link,
-  .nav-link:hover,
-  .nav-link:focus,
-  .nav-link:active,
-  .nav-link.active {
+  /* Nav Links */
+  .main-nav .nav-link {
     display: block;
     width: 100%;
+
     padding: 10px 12px;
 
     color: #0d1b3e;
     background: transparent;
 
     text-decoration: none !important;
-    border: none !important;
+    border: none;
     border-bottom: none !important;
-    box-shadow: none !important;
-    outline: none !important;
 
     font-size: 13px;
     font-weight: 500;
@@ -3914,19 +3962,19 @@ section {
     border-radius: 6px;
   }
 
-  .nav-link:hover,
-  .nav-link:focus,
-  .nav-link:active {
+  /* Hover - NO underline */
+  .main-nav .nav-link:hover,
+  .main-nav .nav-link:focus,
+  .main-nav .nav-link:active {
+    color: #0d1b3e;
     background: #f3f5f9;
+
+    text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none;
   }
 
-  .nav-link::before,
-  .nav-link::after {
-    content: none !important;
-    display: none !important;
-  }
-
-  /* ---- Apply button inside menu ---- */
+  /* Apply Button */
   .main-nav .apply-btn {
     display: flex;
     align-items: center;
@@ -3942,6 +3990,7 @@ section {
 
     text-decoration: none !important;
     border: none;
+
     border-radius: 7px;
 
     font-size: 12px;
@@ -3951,6 +4000,47 @@ section {
   .main-nav .apply-btn:hover {
     background: #0d1b3e;
     color: #ffffff;
+    text-decoration: none !important;
+    border: none;
     box-shadow: none;
+  }
+}
+@media (max-width: 768px) {
+  /* Remove ALL underline from mobile navigation */
+  .main-header .main-nav .nav-link,
+  .main-header .main-nav .nav-link:hover,
+  .main-header .main-nav .nav-link:focus,
+  .main-header .main-nav .nav-link:active,
+  .main-header .main-nav .nav-link.active {
+    text-decoration: none !important;
+    border: none !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  /* Remove underline created by pseudo element */
+  .main-header .main-nav .nav-link::before,
+  .main-header .main-nav .nav-link::after,
+  .main-header .main-nav .nav-link:hover::before,
+  .main-header .main-nav .nav-link:hover::after,
+  .main-header .main-nav .nav-link.active::before,
+  .main-header .main-nav .nav-link.active::after {
+    content: none !important;
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Also remove border from nav item */
+  .main-header .main-nav .nav-item,
+  .main-header .main-nav .nav-item:hover,
+  .main-header .main-nav .nav-item.active {
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
   }
 }
