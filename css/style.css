@@ -99,12 +99,18 @@ section {
 /* ================= HEADER ================= */
 
 .main-header {
-  width: 100%;
-  background: #f3f5f9;
-  border-bottom: 1px solid rgba(13, 27, 62, 0.08);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    position: sticky;
+    top: 15px;
+    left: 0;
+    right: 0;
+    width: calc(100% - 30px);
+    max-width: 1250px;
+    margin: 0 auto;
+    z-index: 9999;
+
+    background: #ffffff;
+    border: 1px solid #e2e6ed;
+    box-shadow: 0 8px 25px rgba(13, 27, 62, 0.08);
 }
 
 .header-container {
@@ -3969,6 +3975,9 @@ section {
     padding: 0;
     overflow-x: hidden;
   }
+    body {
+        padding-top: 45px;
+    }
 
   /* ================= HEADER ================= */
 
@@ -3976,8 +3985,8 @@ section {
     width: 100%;
     margin: 0;
     padding: 0;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 0px;
     z-index: 9999;
   }
 
