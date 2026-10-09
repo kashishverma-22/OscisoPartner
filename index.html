@@ -96,7 +96,10 @@
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
 
-              <a href="https://ocscert.in/iso-certification/" class="hero-btn secondary-btn">
+              <a
+                href="https://ocscert.in/iso-certification/"
+                class="hero-btn secondary-btn"
+              >
                 Get ISO Certified
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -399,7 +402,7 @@
       <div class="partner-form-container">
         <!-- LEFT INTRO -->
         <div class="partner-form-info">
-          <span class="form-label"> OCS ISO PARTNER </span>
+          <span class="form-label">OCS ISO PARTNER</span>
 
           <h2>
             Let's Start Your
@@ -417,7 +420,6 @@
               <div class="info-icon">
                 <i class="fa-solid fa-user-check"></i>
               </div>
-
               <div>
                 <h4>Professional Guidance</h4>
                 <p>Get guidance throughout the process.</p>
@@ -428,7 +430,6 @@
               <div class="info-icon">
                 <i class="fa-solid fa-certificate"></i>
               </div>
-
               <div>
                 <h4>ISO Certification Support</h4>
                 <p>Explore suitable ISO standards and services.</p>
@@ -439,7 +440,6 @@
               <div class="info-icon">
                 <i class="fa-solid fa-headset"></i>
               </div>
-
               <div>
                 <h4>Dedicated Assistance</h4>
                 <p>Our team will contact you after submission.</p>
@@ -452,9 +452,7 @@
         <div class="partner-form-box">
           <div class="form-box-header">
             <span>PARTNER ENQUIRY</span>
-
             <h3>Tell Us About Yourself</h3>
-
             <p>Please fill in the details below.</p>
           </div>
 
@@ -462,11 +460,9 @@
             <!-- NAME + COMPANY -->
             <div class="form-row">
               <div class="form-field">
-                <label for="partnerName"> Your Name <b>*</b> </label>
-
+                <label for="partnerName">Your Name <b>*</b></label>
                 <div class="input-box">
                   <i class="fa-regular fa-user"></i>
-
                   <input
                     type="text"
                     id="partnerName"
@@ -475,16 +471,13 @@
                     required
                   />
                 </div>
-
                 <small class="form-error" id="nameError"></small>
               </div>
 
               <div class="form-field">
-                <label for="companyName"> Company Name </label>
-
+                <label for="companyName">Company Name</label>
                 <div class="input-box">
                   <i class="fa-regular fa-building"></i>
-
                   <input
                     type="text"
                     id="companyName"
@@ -498,11 +491,9 @@
             <!-- EMAIL + COUNTRY -->
             <div class="form-row">
               <div class="form-field">
-                <label for="partnerEmail"> Email Address <b>*</b> </label>
-
+                <label for="partnerEmail">Email Address <b>*</b></label>
                 <div class="input-box">
                   <i class="fa-regular fa-envelope"></i>
-
                   <input
                     type="email"
                     id="partnerEmail"
@@ -511,7 +502,6 @@
                     required
                   />
                 </div>
-
                 <small class="form-error" id="emailError"></small>
               </div>
 
@@ -525,45 +515,26 @@
 
                   <select id="countrySelect" name="country" required>
                     <option value="" selected disabled>Select country</option>
-
                     <option value="AF" data-code="+93">Afghanistan</option>
-
                     <option value="AU" data-code="+61">Australia</option>
-
                     <option value="BD" data-code="+880">Bangladesh</option>
-
                     <option value="CA" data-code="+1">Canada</option>
-
                     <option value="CN" data-code="+86">China</option>
-
                     <option value="DE" data-code="+49">Germany</option>
-
                     <option value="IN" data-code="+91">India</option>
-
                     <option value="IT" data-code="+39">Italy</option>
-
                     <option value="JP" data-code="+81">Japan</option>
-
                     <option value="MY" data-code="+60">Malaysia</option>
-
                     <option value="NZ" data-code="+64">New Zealand</option>
-
                     <option value="PK" data-code="+92">Pakistan</option>
-
                     <option value="QA" data-code="+974">Qatar</option>
-
                     <option value="SA" data-code="+966">Saudi Arabia</option>
-
                     <option value="SG" data-code="+65">Singapore</option>
-
                     <option value="ZA" data-code="+27">South Africa</option>
-
                     <option value="AE" data-code="+971">
                       United Arab Emirates
                     </option>
-
                     <option value="GB" data-code="+44">United Kingdom</option>
-
                     <option value="US" data-code="+1">United States</option>
                   </select>
 
@@ -574,9 +545,42 @@
               </div>
             </div>
 
+            <!-- CITY + STATE -->
+            <div class="form-row">
+              <div class="form-field">
+                <label for="city">City <b>*</b></label>
+                <div class="input-box">
+                  <i class="fa-solid fa-city"></i>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="Enter your city"
+                    autocomplete="address-level2"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="state">State / Province <b>*</b></label>
+                <div class="input-box">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  <input
+                    type="text"
+                    id="state"
+                    name="state"
+                    placeholder="Enter your state or province"
+                    autocomplete="address-level1"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
             <!-- PHONE -->
             <div class="form-field full-field">
-              <label for="phoneNumber"> Phone Number <b>*</b> </label>
+              <label for="phoneNumber">Phone Number <b>*</b></label>
 
               <div class="phone-input">
                 <div class="country-code-wrapper">
@@ -586,43 +590,25 @@
                     aria-label="Country calling code"
                   >
                     <option value="+93" data-country="AF">AF +93</option>
-
                     <option value="+61" data-country="AU">AU +61</option>
-
                     <option value="+880" data-country="BD">BD +880</option>
-
                     <option value="+1" data-country="CA">CA +1</option>
-
                     <option value="+86" data-country="CN">CN +86</option>
-
                     <option value="+49" data-country="DE">DE +49</option>
-
                     <option value="+91" data-country="IN" selected>
                       IN +91
                     </option>
-
                     <option value="+39" data-country="IT">IT +39</option>
-
                     <option value="+81" data-country="JP">JP +81</option>
-
                     <option value="+60" data-country="MY">MY +60</option>
-
                     <option value="+64" data-country="NZ">NZ +64</option>
-
                     <option value="+92" data-country="PK">PK +92</option>
-
                     <option value="+974" data-country="QA">QA +974</option>
-
                     <option value="+966" data-country="SA">SA +966</option>
-
                     <option value="+65" data-country="SG">SG +65</option>
-
                     <option value="+27" data-country="ZA">ZA +27</option>
-
                     <option value="+971" data-country="AE">AE +971</option>
-
                     <option value="+44" data-country="GB">GB +44</option>
-
                     <option value="+1" data-country="US">US +1</option>
                   </select>
 
@@ -650,12 +636,7 @@
             <!-- DIVIDER -->
             <div class="form-divider"></div>
 
-            <!-- ACCREDITATION PREFERENCE -->
-
-            <!-- =========================================
-     ACCREDITATION PREFERENCE
-========================================= -->
-
+            <!-- CERTIFICATION PREFERENCE -->
             <div class="preference-section">
               <div class="preference-heading">
                 <div>
@@ -668,7 +649,7 @@
                 <!-- IAF -->
                 <label class="preference-card">
                   <input
-                    type="radio"
+                    type="checkbox"
                     name="certificationPreference"
                     value="IAF"
                     id="iafOption"
@@ -678,14 +659,14 @@
 
                   <span class="preference-content">
                     <strong>IAF</strong>
-                    <small> IAF accredited certification preference </small>
+                    <small>IAF accredited certification preference</small>
                   </span>
                 </label>
 
                 <!-- NON IAF -->
                 <label class="preference-card">
                   <input
-                    type="radio"
+                    type="checkbox"
                     name="certificationPreference"
                     value="Non-IAF"
                     id="nonIafOption"
@@ -695,50 +676,13 @@
 
                   <span class="preference-content">
                     <strong>Non-IAF</strong>
-                    <small> Non-IAF certification preference </small>
+                    <small>Non-IAF certification preference</small>
                   </span>
                 </label>
               </div>
-
-              <!-- ACCREDITATION SELECTION -->
-              <div
-                class="accreditation-selection"
-                id="accreditationSelection"
-                style="display: none"
-              >
-                <label for="accreditationSelect">
-                  Select Accreditation <b>*</b>
-                </label>
-
-                <div class="input-box select-box">
-                  <i class="fa-solid fa-certificate"></i>
-
-                  <select id="accreditationSelect" name="accreditation">
-                    <option value="" selected disabled>
-                      Select accreditation
-                    </option>
-
-                    <option value="UKAS">UKAS</option>
-                    <option value="ANAB">ANAB</option>
-                    <option value="NABCB">NABCB</option>
-                    <option value="JAS-ANZ">JAS-ANZ</option>
-                    <option value="DAkkS">DAkkS</option>
-                    <option value="COFRAC">COFRAC</option>
-                    <option value="CNAS">CNAS</option>
-                    <option value="JAB">JAB</option>
-                  </select>
-
-                  <i class="fa-solid fa-chevron-down select-arrow"></i>
-                </div>
-
-                <small class="form-error" id="accreditationError"></small>
-              </div>
             </div>
 
-            <!-- =========================================
-     BOTTOM
-========================================= -->
-
+            <!-- BOTTOM -->
             <div class="form-bottom">
               <p>
                 <i class="fa-solid fa-lock"></i>
@@ -911,11 +855,7 @@
           <!-- ISO 9001 -->
           <div class="priority-standard-card">
             <div class="priority-card-top">
-              <span class="priority-category">
-                QUALITY<br />
-                MANAGEMENT
-              </span>
-
+              <span class="priority-category">QUALITY<br />MANAGEMENT</span>
               <span class="priority-number">01</span>
             </div>
 
@@ -936,9 +876,11 @@
             </div>
 
             <div class="priority-card-footer">
-              <a href="https://ocscert.in/iso-9001-certification/"> ISO 9001 </a>
-
-              <a href="https://ocscert.in/iso-9001-certification/" class="priority-arrow">
+              <a href="https://ocscert.in/iso-9001-certification/">ISO 9001</a>
+              <a
+                href="https://ocscert.in/iso-9001-certification/"
+                class="priority-arrow"
+              >
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
@@ -947,11 +889,9 @@
           <!-- ISO 14001 -->
           <div class="priority-standard-card">
             <div class="priority-card-top">
-              <span class="priority-category">
-                ENVIRONMENTAL<br />
-                MANAGEMENT
-              </span>
-
+              <span class="priority-category"
+                >ENVIRONMENTAL<br />MANAGEMENT</span
+              >
               <span class="priority-number">02</span>
             </div>
 
@@ -973,9 +913,11 @@
             </div>
 
             <div class="priority-card-footer">
-              <a href="https://ocscert.in/iso-certification/"> ISO 14001 </a>
-
-              <a href="https://ocscert.in/iso-certification/" class="priority-arrow">
+              <a href="https://ocscert.in/iso-certification/">ISO 14001</a>
+              <a
+                href="https://ocscert.in/iso-certification/"
+                class="priority-arrow"
+              >
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
@@ -984,11 +926,7 @@
           <!-- ISO 27001 -->
           <div class="priority-standard-card">
             <div class="priority-card-top">
-              <span class="priority-category">
-                INFORMATION<br />
-                SECURITY
-              </span>
-
+              <span class="priority-category">INFORMATION<br />SECURITY</span>
               <span class="priority-number">03</span>
             </div>
 
@@ -1009,9 +947,13 @@
             </div>
 
             <div class="priority-card-footer">
-              <a href="https://ocscert.in/iso-27001-certification/"> ISO 27001 </a>
-
-              <a href="https://ocscert.in/iso-27001-certification/" class="priority-arrow">
+              <a href="https://ocscert.in/iso-27001-certification/"
+                >ISO 27001</a
+              >
+              <a
+                href="https://ocscert.in/iso-27001-certification/"
+                class="priority-arrow"
+              >
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
@@ -1020,11 +962,9 @@
           <!-- ISO 45001 -->
           <div class="priority-standard-card">
             <div class="priority-card-top">
-              <span class="priority-category">
-                OCCUPATIONAL<br />
-                HEALTH &amp; SAFETY
-              </span>
-
+              <span class="priority-category"
+                >OCCUPATIONAL<br />HEALTH &amp; SAFETY</span
+              >
               <span class="priority-number">04</span>
             </div>
 
@@ -1046,9 +986,151 @@
             </div>
 
             <div class="priority-card-footer">
-              <a href="https://ocscert.in/iso-certification/"> ISO 45001 </a>
+              <a href="https://ocscert.in/iso-certification/">ISO 45001</a>
+              <a
+                href="https://ocscert.in/iso-certification/"
+                class="priority-arrow"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
 
-              <a href="https://ocscert.in/iso-certification/" class="priority-arrow">
+          <!-- ISO 22000 -->
+          <div class="priority-standard-card">
+            <div class="priority-card-top">
+              <span class="priority-category">FOOD SAFETY<br />MANAGEMENT</span>
+              <span class="priority-number">05</span>
+            </div>
+
+            <div class="priority-standard-title">
+              <span>ISO</span>
+              <strong>22000</strong>
+            </div>
+
+            <p class="priority-description">
+              A food safety management standard that helps organizations manage
+              food safety risks throughout the food supply chain.
+            </p>
+
+            <div class="priority-tags">
+              <span>Food &amp; Beverage</span>
+              <span>Agriculture</span>
+              <span>Retail</span>
+            </div>
+
+            <div class="priority-card-footer">
+              <a href="https://ocscert.in/iso-certification/">ISO 22000</a>
+              <a
+                href="https://ocscert.in/iso-certification/"
+                class="priority-arrow"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ISO 50001 -->
+          <div class="priority-standard-card">
+            <div class="priority-card-top">
+              <span class="priority-category">ENERGY<br />MANAGEMENT</span>
+              <span class="priority-number">06</span>
+            </div>
+
+            <div class="priority-standard-title">
+              <span>ISO</span>
+              <strong>50001</strong>
+            </div>
+
+            <p class="priority-description">
+              An energy management standard that helps organizations improve
+              energy performance, efficiency and energy use.
+            </p>
+
+            <div class="priority-tags">
+              <span>Manufacturing</span>
+              <span>Buildings</span>
+              <span>Energy</span>
+            </div>
+
+            <div class="priority-card-footer">
+              <a href="https://ocscert.in/iso-certification/">ISO 50001</a>
+              <a
+                href="https://ocscert.in/iso-certification/"
+                class="priority-arrow"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ISO 13485 -->
+          <div class="priority-standard-card">
+            <div class="priority-card-top">
+              <span class="priority-category"
+                >MEDICAL DEVICES<br />QUALITY MANAGEMENT</span
+              >
+              <span class="priority-number">07</span>
+            </div>
+
+            <div class="priority-standard-title">
+              <span>ISO</span>
+              <strong>13485</strong>
+            </div>
+
+            <p class="priority-description">
+              A quality management standard for medical devices that helps
+              organizations meet applicable safety and regulatory requirements.
+            </p>
+
+            <div class="priority-tags">
+              <span>Healthcare</span>
+              <span>Medical Devices</span>
+              <span>Pharma</span>
+            </div>
+
+            <div class="priority-card-footer">
+              <a href="https://ocscert.in/iso-certification/">ISO 13485</a>
+              <a
+                href="https://ocscert.in/iso-certification/"
+                class="priority-arrow"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ISO 37001 -->
+          <div class="priority-standard-card">
+            <div class="priority-card-top">
+              <span class="priority-category"
+                >ANTI-BRIBERY<br />MANAGEMENT</span
+              >
+              <span class="priority-number">08</span>
+            </div>
+
+            <div class="priority-standard-title">
+              <span>ISO</span>
+              <strong>37001</strong>
+            </div>
+
+            <p class="priority-description">
+              An anti-bribery management standard that helps organizations
+              prevent, detect and address bribery risks.
+            </p>
+
+            <div class="priority-tags">
+              <span>Finance</span>
+              <span>Government</span>
+              <span>Corporate</span>
+            </div>
+
+            <div class="priority-card-footer">
+              <a href="https://ocscert.in/iso-certification/">ISO 37001</a>
+              <a
+                href="https://ocscert.in/iso-certification/"
+                class="priority-arrow"
+              >
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
@@ -1678,7 +1760,7 @@
         <!-- BRAND -->
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="image/logo.png">
+            <img src="image/logo.png" />
           </div>
 
           <p>
@@ -1703,8 +1785,12 @@
           <h3>Information</h3>
 
           <a href="#how-it-works">How It Works</a>
-          <a href="https://ocscert.in/accreditation-bodies/">Accreditation Bodies</a>
-          <a href="https://ocscert.in/certification-bodies/">Certification bodies</a>
+          <a href="https://ocscert.in/accreditation-bodies/"
+            >Accreditation Bodies</a
+          >
+          <a href="https://ocscert.in/certification-bodies/"
+            >Certification bodies</a
+          >
           <a href="#faq">FAQs</a>
         </div>
 

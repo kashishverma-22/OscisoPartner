@@ -371,7 +371,7 @@ section {
 
   color: #53627a;
 
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.8;
   font-weight: 400;
 }
@@ -466,7 +466,7 @@ section {
 
   color: #4f5e76;
 
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 500;
 }
 
@@ -793,10 +793,44 @@ section {
 
   color: #68748a;
 
-  font-size: 11.5px;
+  font-size: 12.5px;
   line-height: 1.75;
 }
 
+/* 8 ISO STANDARDS GRID */
+.priority-standards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.priority-standard-card {
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.priority-card-footer {
+  margin-top: auto;
+}
+
+/* TABLET */
+@media (max-width: 1100px) {
+  .priority-standards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .priority-standards-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
 /* ================= DECORATIVE CIRCLE ================= */
 
 .card-circle {
@@ -969,7 +1003,7 @@ section {
 
   color: rgba(255, 255, 255, 0.68);
 
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.8;
 }
 
@@ -1179,7 +1213,7 @@ section {
 
   color: #68748a;
 
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
 }
 
@@ -1222,7 +1256,7 @@ section {
 
   color: #0d1b3e;
 
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -1231,7 +1265,7 @@ section {
 
   color: #7a8496;
 
-  font-size: 10px;
+  font-size: 13px;
 }
 
 /* ================= FORM BOX ================= */
@@ -1273,7 +1307,7 @@ section {
 
   color: #8790a0;
 
-  font-size: 11px;
+  font-size: 13px;
 }
 
 /* ================= FORM ROW ================= */
@@ -1299,7 +1333,7 @@ section {
 
   color: #0d1b3e;
 
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 500;
 }
 
@@ -1345,7 +1379,7 @@ section {
   outline: none;
 
   font-family: "Poppins", sans-serif;
-  font-size: 11px;
+  font-size: 13px;
 
   transition: 0.25s ease;
 }
@@ -1433,7 +1467,7 @@ section {
   color: #0d1b3e;
 
   font-family: "Poppins", sans-serif;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 500;
 
   cursor: pointer;
@@ -1469,7 +1503,7 @@ section {
   color: #0d1b3e;
 
   font-family: "Poppins", sans-serif;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .phone-input > input::placeholder {
@@ -1487,7 +1521,7 @@ section {
 
   color: #7b8495;
 
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .whatsapp-note i {
@@ -1506,7 +1540,7 @@ section {
 
   color: #c0392b;
 
-  font-size: 9px;
+  font-size: 11px;
 }
 
 /* ================= DIVIDER ================= */
@@ -1540,7 +1574,7 @@ section {
 
   color: #8991a0;
 
-  font-size: 9px;
+  font-size: 11px;
 }
 
 /* ================= PREFERENCE OPTIONS ================= */
@@ -1625,7 +1659,7 @@ section {
 
   color: #0d1b3e;
 
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -1636,7 +1670,7 @@ section {
 
   color: #8991a0;
 
-  font-size: 8.5px;
+  font-size: 10px;
 }
 
 /* ================= FORM BOTTOM ================= */
@@ -1658,12 +1692,12 @@ section {
 
   color: #8991a0;
 
-  font-size: 8.5px;
+  font-size: 13px;
 }
 
 .form-bottom p i {
   color: #0d1b3e;
-  font-size: 9px;
+  font-size: 13px;
 }
 
 /* ================= SUBMIT ================= */
@@ -1687,7 +1721,7 @@ section {
 
   font-family: "Poppins", sans-serif;
 
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
 
   cursor: pointer;
@@ -1889,7 +1923,7 @@ section {
   display: inline-block;
   margin-bottom: 12px;
   color: #0d1b3e;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 1.5px;
 }
@@ -1958,7 +1992,7 @@ section {
   color: #0d1b3e;
 
   font-family: "Poppins", sans-serif;
-  font-size: 8px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
 
@@ -2413,7 +2447,7 @@ section {
 .priority-category {
   color: #7b8494;
 
-  font-size: 8px;
+  font-size: 12px;
   line-height: 1.5;
   font-weight: 700;
   letter-spacing: 1px;
@@ -2422,7 +2456,7 @@ section {
 .priority-number {
   color: #a4adbc;
 
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -2464,7 +2498,7 @@ section {
 
   color: #687285;
 
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.75;
   font-weight: 400;
 }
@@ -2495,7 +2529,7 @@ section {
 
   color: #596477;
 
-  font-size: 8px;
+  font-size: 10px;
   line-height: 1;
   font-weight: 500;
 
@@ -2525,7 +2559,7 @@ section {
 .priority-card-footer > a:first-child {
   color: #0d1b3e;
 
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 600;
 
   text-decoration: none;
@@ -2554,7 +2588,7 @@ section {
 
   text-decoration: none;
 
-  font-size: 10px;
+  font-size: 12px;
 
   transition:
     background-color 0.3s ease,
@@ -2832,7 +2866,7 @@ section {
 
   color: #7a8495;
 
-  font-size: 8px;
+  font-size: 10px;
   line-height: 1.45;
 
   font-weight: 700;
@@ -2863,7 +2897,7 @@ section {
 
   color: #687285;
 
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.7;
 
   font-weight: 400;
@@ -3104,7 +3138,7 @@ section {
   color: #0d1b3e;
   text-align: left;
   font-family: "Poppins", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
 
   cursor: pointer;
@@ -3127,7 +3161,7 @@ section {
   background: #f3f5f9;
   color: #0d1b3e;
 
-  font-size: 10px;
+  font-size: 12px;
   position: relative;
 
   transition: 0.3s ease;
@@ -3172,7 +3206,7 @@ section {
   margin: 0;
 
   color: #6d7687;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.75;
 }
 
@@ -3196,7 +3230,7 @@ section {
 
   color: #0d1b3e;
   font-family: "Poppins", sans-serif;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
 
   cursor: pointer;
@@ -3369,7 +3403,7 @@ section {
   margin: 0 auto;
 
   color: #697386;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.75;
   font-weight: 400;
 }
@@ -3410,7 +3444,7 @@ section {
   color: #0d1b3e;
   text-decoration: none;
 
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1.4;
   font-weight: 500;
 
@@ -3730,7 +3764,7 @@ section {
   background-color: #fff;
 }
 
-.footer-logo img{
+.footer-logo img {
   width: 140px;
 }
 
@@ -3738,7 +3772,7 @@ section {
   margin: 0;
 
   color: #b8c1d2;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.8;
 }
 
@@ -3756,7 +3790,7 @@ section {
   margin: 0 0 18px;
 
   color: #ffffff;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.4;
   font-weight: 600;
 }
@@ -3767,7 +3801,7 @@ section {
   color: #b8c1d2;
   text-decoration: none;
 
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1.5;
   font-weight: 400;
 
@@ -3802,7 +3836,7 @@ section {
 
 .footer-copyright {
   color: #9da8bc;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.5;
 }
 
@@ -3816,7 +3850,7 @@ section {
   color: #9da8bc;
   text-decoration: none;
 
-  font-size: 9px;
+  font-size: 12px;
   transition: color 0.3s ease;
 }
 
@@ -3939,7 +3973,6 @@ section {
 ========================================================= */
 
 @media (max-width: 768px) {
-
   /* ---- Sticky header on mobile ---- */
   .main-header {
     position: sticky;
@@ -4087,3 +4120,1342 @@ section {
   }
 }
 
+/* =========================================
+   RESPONSIVE TYPOGRAPHY & LAYOUT FIX
+   Add this at the END of your existing CSS
+   Desktop font sizes remain unchanged
+========================================= */
+
+/* ---------- TABLET: 992px ---------- */
+@media (max-width: 992px) {
+  /* Header */
+  .header-container {
+    gap: 20px;
+  }
+
+  .main-nav {
+    gap: 18px;
+  }
+
+  .nav-list {
+    gap: 18px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  /* Hero */
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero-tag {
+    font-size: 11px;
+  }
+
+  .hero-btn {
+    font-size: 12px;
+  }
+
+  .trust-item {
+    font-size: 12px;
+  }
+
+  /* Highlights */
+  .highlights-heading h2 {
+    font-size: 30px;
+  }
+
+  .highlights-heading p {
+    font-size: 12px;
+  }
+
+  .highlight-card h3 {
+    font-size: 17px;
+  }
+
+  .highlight-card p {
+    font-size: 12px;
+  }
+
+  /* Grow business */
+  .grow-business-content h2 {
+    font-size: 27px;
+  }
+
+  .grow-business-content p {
+    font-size: 12px;
+  }
+
+  .grow-btn {
+    font-size: 11px;
+  }
+
+  /* Partner form */
+  .partner-form-info h2 {
+    font-size: 32px;
+  }
+
+  .partner-form-info > p {
+    font-size: 13px;
+  }
+
+  .form-box-header h3 {
+    font-size: 22px;
+  }
+
+  .form-box-header p {
+    font-size: 12px;
+  }
+
+  .form-field label {
+    font-size: 12px;
+  }
+
+  .input-box input,
+  .input-box select,
+  .phone-input > input {
+    font-size: 12px;
+  }
+
+  .form-submit {
+    font-size: 12px;
+  }
+
+  /* How it works */
+  .how-heading h2 {
+    font-size: 28px;
+  }
+
+  .how-heading p {
+    font-size: 12px;
+  }
+
+  .work-step h3 {
+    font-size: 11px;
+  }
+
+  /* ISO standards */
+  .priority-heading h2 {
+    font-size: 27px;
+  }
+
+  .priority-heading p {
+    font-size: 12px;
+  }
+
+  .priority-standard-title strong {
+    font-size: 35px;
+  }
+
+  .priority-description {
+    font-size: 12px;
+  }
+
+  .priority-card-footer > a:first-child {
+    font-size: 12px;
+  }
+
+  /* Accreditation */
+  .accreditation-heading h2 {
+    font-size: 27px;
+  }
+
+  .accreditation-heading p {
+    font-size: 12px;
+  }
+
+  .accreditation-card h3 {
+    font-size: 23px;
+  }
+
+  .accreditation-card p {
+    font-size: 12px;
+  }
+
+  /* FAQ */
+  .faq-intro h2 {
+    font-size: 28px;
+  }
+
+  .faq-intro p {
+    font-size: 12px;
+  }
+
+  .faq-question {
+    font-size: 13px;
+  }
+
+  .faq-answer p {
+    font-size: 12px;
+  }
+
+  .faq-show-all {
+    font-size: 13px;
+  }
+
+  /* Where we operate */
+  .where-operate-content h2 {
+    font-size: 29px;
+  }
+
+  .where-operate-content p {
+    font-size: 12px;
+  }
+
+  .country-pill {
+    font-size: 12px;
+  }
+
+  /* Footer */
+  .footer-brand p {
+    font-size: 12px;
+  }
+
+  .footer-column h3 {
+    font-size: 13px;
+  }
+
+  .footer-column a {
+    font-size: 12px;
+  }
+
+  .footer-copyright,
+  .footer-bottom-links a {
+    font-size: 11px;
+  }
+}
+
+/* ---------- MOBILE: 768px ---------- */
+@media (max-width: 768px) {
+  /* General section spacing */
+  .highlights-section,
+  .partner-form-section,
+  .priority-standards-section,
+  .accreditation-section,
+  .faq-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  /* Header */
+  .header-container {
+    min-height: 70px;
+    padding: 0 18px;
+  }
+
+  .logo img {
+    width: 125px;
+  }
+
+  .main-nav {
+    gap: 0;
+  }
+
+  .nav-link,
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link:active,
+  .nav-link.active {
+    font-size: 13px;
+  }
+
+  .main-nav .apply-btn {
+    font-size: 12px;
+  }
+
+  /* Hero */
+  .hero-content {
+    padding: 55px 0;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .hero-tag {
+    font-size: 11px;
+  }
+
+  .hero-btn {
+    min-height: 44px;
+    font-size: 12px;
+  }
+
+  .trust-item {
+    font-size: 11px;
+  }
+
+  /* Highlights */
+  .highlights-container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .highlights-heading {
+    margin-bottom: 35px;
+  }
+
+  .highlights-heading h2 {
+    font-size: 27px;
+  }
+
+  .highlights-heading p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .section-label {
+    font-size: 10px;
+  }
+
+  .highlight-card {
+    padding: 23px;
+  }
+
+  .highlight-card h3 {
+    font-size: 17px;
+  }
+
+  .highlight-card p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .card-tag {
+    font-size: 9px;
+  }
+
+  /* Grow business */
+  .grow-business-container {
+    padding: 0 18px;
+    gap: 25px;
+  }
+
+  .grow-business-content h2 {
+    font-size: 25px;
+  }
+
+  .grow-business-content p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .grow-label {
+    font-size: 9px;
+  }
+
+  .grow-btn {
+    font-size: 11px;
+  }
+
+  /* Partner form */
+  .partner-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 32px;
+    padding: 0 18px;
+  }
+
+  .partner-form-info {
+    max-width: 100%;
+  }
+
+  .partner-form-info h2 {
+    font-size: 28px;
+  }
+
+  .partner-form-info > p {
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  .form-label {
+    font-size: 9px;
+  }
+
+  .form-info-item h4 {
+    font-size: 13px;
+  }
+
+  .form-info-item p {
+    font-size: 12px;
+  }
+
+  .partner-form-box {
+    padding: 24px 18px;
+  }
+
+  .form-box-header > span {
+    font-size: 9px;
+  }
+
+  .form-box-header h3 {
+    font-size: 21px;
+  }
+
+  .form-box-header p {
+    font-size: 12px;
+  }
+
+  .form-field label {
+    font-size: 12px;
+  }
+
+  .input-box input,
+  .input-box select,
+  .phone-input > input {
+    font-size: 12px;
+  }
+
+  .whatsapp-note {
+    font-size: 11px;
+  }
+
+  .form-error {
+    font-size: 10px;
+  }
+
+  .preference-heading h4 {
+    font-size: 12px;
+  }
+
+  .preference-heading p {
+    font-size: 10px;
+  }
+
+  .preference-content strong {
+    font-size: 12px;
+  }
+
+  .preference-content small {
+    font-size: 10px;
+  }
+
+  .form-bottom p {
+    font-size: 11px;
+  }
+
+  .form-submit {
+    min-height: 44px;
+    font-size: 12px;
+  }
+
+  /* How it works */
+  .how-it-works {
+    padding: 55px 15px;
+  }
+
+  .how-heading {
+    margin-bottom: 35px;
+  }
+
+  .how-label {
+    font-size: 11px;
+  }
+
+  .how-heading h2 {
+    font-size: 25px;
+  }
+
+  .how-heading p {
+    font-size: 12px;
+  }
+
+  .steps-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px 15px;
+  }
+
+  .step-arrow {
+    display: none;
+  }
+
+  .step-badge {
+    font-size: 10px;
+  }
+
+  .step-icon {
+    width: 54px;
+    height: 54px;
+    font-size: 17px;
+  }
+
+  .work-step h3 {
+    font-size: 11px;
+  }
+
+  .journey-btn {
+    font-size: 11px;
+  }
+
+  /* ISO standards */
+  .priority-standards-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .priority-heading {
+    margin-bottom: 35px;
+  }
+
+  .priority-eyebrow {
+    font-size: 9px;
+  }
+
+  .priority-heading h2 {
+    font-size: 25px;
+  }
+
+  .priority-heading p {
+    font-size: 12px;
+  }
+
+  .priority-standards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .priority-standard-card {
+    min-height: 370px;
+    padding: 21px 17px;
+  }
+
+  .priority-category {
+    font-size: 10px;
+  }
+
+  .priority-number {
+    font-size: 12px;
+  }
+
+  .priority-standard-title {
+    gap: 6px;
+    margin-top: 20px;
+  }
+
+  .priority-standard-title span {
+    font-size: 14px;
+  }
+
+  .priority-standard-title strong {
+    font-size: 32px;
+  }
+
+  .priority-description {
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  .priority-tags span {
+    font-size: 9px;
+  }
+
+  .priority-card-footer > a:first-child {
+    font-size: 11px;
+  }
+
+  /* Accreditation */
+  .accreditation-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .accreditation-heading h2 {
+    font-size: 25px;
+  }
+
+  .accreditation-heading p {
+    font-size: 12px;
+  }
+
+  .accreditation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .accreditation-card {
+    min-height: 310px;
+    padding: 21px 18px;
+  }
+
+  .accreditation-small-title {
+    font-size: 9px;
+  }
+
+  .accreditation-card h3 {
+    font-size: 21px;
+  }
+
+  .accreditation-card p {
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  /* FAQ */
+  .faq-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .faq-intro {
+    margin-bottom: 32px;
+  }
+
+  .faq-label {
+    font-size: 9px;
+  }
+
+  .faq-intro h2 {
+    font-size: 25px;
+  }
+
+  .faq-intro p {
+    font-size: 12px;
+  }
+
+  .faq-question {
+    min-height: 58px;
+    padding: 14px 16px;
+    font-size: 12px;
+    gap: 12px;
+  }
+
+  .faq-answer {
+    padding: 0 16px 17px;
+  }
+
+  .faq-answer p {
+    font-size: 11px;
+  }
+
+  .faq-show-all {
+    min-height: 46px;
+    font-size: 12px;
+  }
+
+  /* Where we operate */
+  .where-operate-section {
+    min-height: auto;
+    padding: 60px 18px;
+  }
+
+  .where-operate-content h2 {
+    font-size: 26px;
+  }
+
+  .where-operate-content p {
+    font-size: 12px;
+  }
+
+  .where-label {
+    font-size: 9px;
+  }
+
+  .country-list {
+    gap: 8px;
+  }
+
+  .country-pill {
+    min-height: 33px;
+    padding: 7px 12px;
+    font-size: 10px;
+  }
+
+  /* Footer */
+  .footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px 20px;
+    padding: 45px 18px 30px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+
+  .footer-brand p {
+    font-size: 11px;
+  }
+
+  .footer-column h3 {
+    font-size: 12px;
+  }
+
+  .footer-column a {
+    font-size: 11px;
+  }
+
+  .footer-bottom {
+    padding: 17px 18px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .footer-copyright,
+  .footer-bottom-links a {
+    font-size: 10px;
+  }
+}
+
+/* ---------- SMALL MOBILE: 480px ---------- */
+@media (max-width: 480px) {
+  /* Header */
+  .header-container {
+    min-height: 64px;
+    padding: 0 14px;
+  }
+
+  .logo img {
+    width: 112px;
+  }
+
+  .menu-toggle {
+    width: 39px;
+    height: 39px;
+    font-size: 16px;
+  }
+
+  .main-nav {
+    padding: 12px 10px 15px;
+  }
+
+  .nav-link,
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link:active,
+  .nav-link.active {
+    padding: 9px 10px;
+    font-size: 12px;
+  }
+
+  .main-nav .apply-btn {
+    padding: 10px 13px;
+    font-size: 11px;
+  }
+
+  /* Hero */
+  .hero-content {
+    padding: 45px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-text p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .hero-tag {
+    padding: 6px 11px;
+    font-size: 10px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    min-height: 42px;
+    font-size: 11px;
+  }
+
+  .hero-trust {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px 10px;
+    margin-top: 24px;
+  }
+
+  .trust-item {
+    gap: 6px;
+    font-size: 10px;
+  }
+
+  .trust-item i {
+    font-size: 13px;
+  }
+
+  /* Highlights */
+  .highlights-section {
+    padding: 50px 0;
+  }
+
+  .highlights-container {
+    padding: 0 14px;
+  }
+
+  .highlights-heading h2 {
+    font-size: 24px;
+  }
+
+  .highlights-heading p {
+    font-size: 11px;
+  }
+
+  .highlight-card {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .highlight-card h3 {
+    font-size: 16px;
+  }
+
+  .highlight-card p {
+    font-size: 11px;
+  }
+
+  .card-icon {
+    width: 43px;
+    height: 43px;
+    font-size: 16px;
+  }
+
+  /* Grow business */
+  .grow-business-section {
+    padding: 40px 0;
+  }
+
+  .grow-business-container {
+    padding: 0 15px;
+  }
+
+  .grow-business-content h2 {
+    font-size: 22px;
+  }
+
+  .grow-business-content p {
+    font-size: 11px;
+  }
+
+  .grow-btn {
+    padding: 10px 14px;
+    font-size: 10px;
+  }
+
+  /* Partner form */
+  .partner-form-section {
+    padding: 45px 0;
+  }
+
+  .partner-form-container {
+    padding: 0 13px;
+    gap: 26px;
+  }
+
+  .partner-form-info h2 {
+    font-size: 24px;
+  }
+
+  .partner-form-info > p {
+    font-size: 11px;
+  }
+
+  .form-info-points {
+    gap: 14px;
+    margin-top: 22px;
+  }
+
+  .info-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 13px;
+  }
+
+  .form-info-item h4 {
+    font-size: 12px;
+  }
+
+  .form-info-item p {
+    font-size: 10px;
+  }
+
+  .partner-form-box {
+    padding: 20px 13px;
+    border-radius: 9px;
+  }
+
+  .form-box-header {
+    margin-bottom: 19px;
+  }
+
+  .form-box-header > span {
+    font-size: 8px;
+  }
+
+  .form-box-header h3 {
+    font-size: 19px;
+  }
+
+  .form-box-header p {
+    font-size: 11px;
+  }
+
+  .form-field {
+    margin-bottom: 15px;
+  }
+
+  .form-field label {
+    font-size: 11px;
+  }
+
+  .input-box,
+  .phone-input {
+    height: 43px;
+  }
+
+  .input-box > i:first-child {
+    left: 11px;
+    font-size: 11px;
+  }
+
+  .input-box input,
+  .input-box select {
+    padding-left: 34px;
+    padding-right: 10px;
+    font-size: 11px;
+  }
+
+  .phone-input > input {
+    padding: 0 9px;
+    font-size: 11px;
+  }
+
+  .country-code-wrapper {
+    width: 82px;
+  }
+
+  .country-code-wrapper select {
+    padding-left: 7px;
+    padding-right: 17px;
+    font-size: 9px;
+  }
+
+  .code-arrow {
+    right: 6px;
+  }
+
+  .whatsapp-note {
+    font-size: 10px;
+  }
+
+  .form-error {
+    font-size: 10px;
+  }
+
+  .preference-heading h4 {
+    font-size: 11px;
+  }
+
+  .preference-heading p {
+    font-size: 9px;
+  }
+
+  .preference-options {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .preference-card {
+    min-height: 56px;
+    padding: 10px;
+    gap: 9px;
+  }
+
+  .preference-content strong {
+    font-size: 11px;
+  }
+
+  .preference-content small {
+    font-size: 9px;
+  }
+
+  .form-bottom p {
+    font-size: 10px;
+  }
+
+  .form-submit {
+    min-height: 41px;
+    font-size: 11px;
+  }
+
+  /* How it works */
+  .how-it-works {
+    padding: 45px 12px;
+  }
+
+  .how-heading {
+    margin-bottom: 30px;
+  }
+
+  .how-label {
+    font-size: 9px;
+  }
+
+  .how-heading h2 {
+    font-size: 22px;
+  }
+
+  .how-heading p {
+    font-size: 11px;
+    line-height: 1.65;
+  }
+
+  .steps-wrapper {
+    gap: 26px 8px;
+  }
+
+  .step-badge {
+    min-width: 40px;
+    height: 21px;
+    margin-bottom: 9px;
+    font-size: 8px;
+  }
+
+  .step-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .work-step h3 {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .journey-btn {
+    margin-top: 30px;
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+
+  /* ISO standards */
+  .priority-standards-section {
+    padding: 45px 13px;
+  }
+
+  .priority-heading h2 {
+    font-size: 22px;
+  }
+
+  .priority-heading p {
+    font-size: 11px;
+  }
+
+  .priority-standards-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .priority-standard-card {
+    min-height: auto;
+    padding: 20px 17px;
+  }
+
+  .priority-category {
+    font-size: 9px;
+  }
+
+  .priority-number {
+    font-size: 11px;
+  }
+
+  .priority-standard-title {
+    margin-top: 18px;
+  }
+
+  .priority-standard-title span {
+    font-size: 13px;
+  }
+
+  .priority-standard-title strong {
+    font-size: 31px;
+  }
+
+  .priority-description {
+    margin: 18px 0 15px;
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  .priority-tags span {
+    padding: 5px 7px;
+    font-size: 9px;
+  }
+
+  .priority-card-footer {
+    margin-top: 17px;
+    padding-top: 12px;
+  }
+
+  .priority-card-footer > a:first-child {
+    font-size: 11px;
+  }
+
+  /* Accreditation */
+  .accreditation-section {
+    padding: 45px 13px;
+  }
+
+  .accreditation-heading {
+    margin-bottom: 30px;
+  }
+
+  .accreditation-heading h2 {
+    font-size: 22px;
+  }
+
+  .accreditation-heading p {
+    font-size: 11px;
+  }
+
+  .accreditation-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .accreditation-card {
+    min-height: auto;
+    padding: 20px 17px;
+  }
+
+  .accreditation-logo {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 14px;
+  }
+
+  .accreditation-logo img {
+    max-width: 45px;
+    max-height: 45px;
+  }
+
+  .accreditation-small-title {
+    min-height: 0;
+    font-size: 8px;
+  }
+
+  .accreditation-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .accreditation-card p {
+    font-size: 11px;
+  }
+
+  .accreditation-arrow {
+    width: 29px;
+    height: 29px;
+    margin-top: 16px;
+  }
+
+  /* FAQ */
+  .faq-section {
+    padding: 45px 13px;
+  }
+
+  .faq-intro h2 {
+    font-size: 22px;
+  }
+
+  .faq-intro p {
+    font-size: 11px;
+  }
+
+  .faq-question {
+    min-height: 54px;
+    padding: 12px;
+    font-size: 11px;
+    gap: 8px;
+  }
+
+  .faq-icon {
+    width: 25px;
+    height: 25px;
+    flex-basis: 25px;
+    font-size: 10px;
+  }
+
+  .faq-answer {
+    padding: 0 12px 14px;
+  }
+
+  .faq-answer p {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+
+  .faq-show-all {
+    min-height: 43px;
+    font-size: 11px;
+  }
+
+  /* Where we operate */
+  .where-operate-section {
+    padding: 45px 13px;
+  }
+
+  .where-operate-content {
+    margin-bottom: 25px;
+  }
+
+  .where-label {
+    font-size: 8px;
+  }
+
+  .where-operate-content h2 {
+    font-size: 23px;
+  }
+
+  .where-operate-content p {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+
+  .country-list {
+    gap: 7px;
+  }
+
+  .country-pill {
+    min-height: 30px;
+    padding: 6px 10px;
+    font-size: 9px;
+  }
+
+  /* Footer */
+  .footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 15px;
+    padding: 40px 14px 27px;
+  }
+
+  .footer-logo img {
+    width: 120px;
+  }
+
+  .footer-brand p {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 12px;
+    font-size: 11px;
+  }
+
+  .footer-column a {
+    margin-bottom: 8px;
+    font-size: 9px;
+  }
+
+  .footer-bottom {
+    padding: 15px 12px;
+    gap: 7px;
+  }
+
+  .footer-copyright,
+  .footer-bottom-links a {
+    font-size: 9px;
+  }
+
+  .footer-bottom-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+  }
+}
+
+/* ---------- EXTRA SMALL MOBILE: 360px ---------- */
+@media (max-width: 360px) {
+  .logo img {
+    width: 102px;
+  }
+
+  .hero-text h1 {
+    font-size: 27px;
+  }
+
+  .hero-text p {
+    font-size: 11px;
+  }
+
+  .highlights-heading h2,
+  .priority-heading h2,
+  .accreditation-heading h2,
+  .faq-intro h2,
+  .how-heading h2 {
+    font-size: 20px;
+  }
+
+  .partner-form-info h2 {
+    font-size: 22px;
+  }
+
+  .partner-form-box {
+    padding: 18px 11px;
+  }
+
+  .priority-standard-title strong {
+    font-size: 29px;
+  }
+
+  .country-pill {
+    padding: 6px 8px;
+    font-size: 8px;
+  }
+
+  .footer-main {
+    gap: 23px 12px;
+  }
+
+  .footer-column h3 {
+    font-size: 10px;
+  }
+
+  .footer-column a {
+    font-size: 8px;
+  }
+}
+
+/* ---------- ACCESSIBILITY ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
